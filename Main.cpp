@@ -4,11 +4,25 @@ using namespace std;
 
 int main()
 {
-    // This is really the beginning
-    cout << "Hello World\n";
-    cout << "Hello World again" << endl;
-    cout << "\tHello World, but tabbed";
-    /* Who knows when it's going to end? */
+    int specialYear;
+    double idealPrice;
+    char currentStatus;
+    string userName;
+    bool active;
+
+    specialYear = 1976;
+    idealPrice = 19.99;
+    currentStatus = 'Y';
+    userName = "Golldan";
+    active = true;
+
+    idealPrice *= 1.3;
+
+    cout << "Year: " << specialYear << endl;
+    cout << "Price: " << idealPrice << endl;
+    cout << "Status:" << currentStatus << endl;
+    cout << "Username: " << userName << endl;
+    cout << "Avaiable: " << active << endl;
 
     return 0;
 }
