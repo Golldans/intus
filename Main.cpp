@@ -1,28 +1,27 @@
 #include <iostream>
+#include <string>
 
 using namespace std;
 
 int main()
 {
-    int specialYear;
-    double idealPrice;
-    char currentStatus;
-    string userName;
-    bool active;
+    string item;
+    double price, total;
+    int quantity;
 
-    specialYear = 1976;
-    idealPrice = 19.99;
-    currentStatus = 'Y';
-    userName = "Golldan";
-    active = true;
+    cout << "What item do you want to buy?" << endl;
+    getline(cin, item);
+    cout << "What is the price for each?" << endl;
+    cin >> price;
+    cout << "How many do you want to buy?" << endl;
+    cin >> quantity;
+    cout << endl;
+    
+    total = quantity * price;
 
-    idealPrice *= 1.3;
-
-    cout << "Year: " << specialYear << endl;
-    cout << "Price: " << idealPrice << endl;
-    cout << "Status:" << currentStatus << endl;
-    cout << "Username: " << userName << endl;
-    cout << "Avaiable: " << active << endl;
+    cout << "Item: " << item << endl;
+    cout << "Price: " << price << endl;
+    cout << "Total: " << total << endl;
 
     return 0;
 }
