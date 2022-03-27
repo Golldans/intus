@@ -1,27 +1,24 @@
 #include <iostream>
-#include <string>
 
 using namespace std;
 
 int main()
 {
-    string item;
-    double price, total;
-    int quantity;
+    int dummy;
 
-    cout << "What item do you want to buy?" << endl;
-    getline(cin, item);
-    cout << "What is the price for each?" << endl;
-    cin >> price;
-    cout << "How many do you want to buy?" << endl;
-    cin >> quantity;
-    cout << endl;
-    
-    total = quantity * price;
+    dummy = 5;
 
-    cout << "Item: " << item << endl;
-    cout << "Price: " << price << endl;
-    cout << "Total: " << total << endl;
+    cout << 5 + 5 << endl;
+    cout << 5 * 5 << endl;
+    cout << 5 - 5 << endl;
+    cout << 5 / 5 << endl;
+    cout << 5 % 5 << endl;
+    cout << 5 / 2.0 << endl;
+
+    dummy ++;
+    cout << dummy << endl;
+
+    cout << (double) 5 / 2 << endl;
 
     return 0;
 }
